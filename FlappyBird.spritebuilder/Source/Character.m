@@ -22,7 +22,7 @@
 {
     int randUni = arc4random_uniform(300);
     
-    [self.physicsBody applyImpulse:ccp(0, (float)randUni +  400.f)];
+    [self.physicsBody applyImpulse:ccp(0, ((float)randUni +  200.f))];
 }
 
 @end
