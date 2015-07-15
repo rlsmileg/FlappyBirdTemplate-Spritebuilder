@@ -20,7 +20,9 @@
 
 - (void)flap
 {
-    [self.physicsBody applyImpulse:ccp(0, 900.f)];
+    int randUni = arc4random_uniform(300);
+    
+    [self.physicsBody applyImpulse:ccp(0, (float)randUni +  400.f)];
 }
 
 @end
