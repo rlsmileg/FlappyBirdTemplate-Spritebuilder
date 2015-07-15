@@ -20,10 +20,10 @@
 
 - (void)flap
 {
-    //Skitso mode, random flap strength
-    int randUni = arc4random_uniform(700);
+    //Schizo mode, random flap strength -RL
+    int randUni = arc4random_uniform(600);
     
-    [self.physicsBody applyImpulse:ccp(0, ((float)randUni + 200.f))];
+    [self.physicsBody applyImpulse:ccp(0, ((float)randUni + 250.f))];
 }
 
 @end
