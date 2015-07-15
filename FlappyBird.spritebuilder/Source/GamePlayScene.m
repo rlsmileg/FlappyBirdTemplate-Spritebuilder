@@ -25,8 +25,14 @@
         // Add a new obstacle
         [self addObstacle];
         
-        // Then reset the timer.
-        timeSinceObstacle = 0.0f;
+        if (timeSinceObstacle > 3.0f)
+        {
+            [self addObstacle];
+            
+            // Then reset the timer.
+            timeSinceObstacle = 0.0f;
+
+        }
     }
 }
 
