@@ -25,7 +25,7 @@
         // Add a new obstacle
         [self addObstacle];
         
-        if (timeSinceObstacle > 3.0f)
+        if (timeSinceObstacle > 1.0f)
         {
             [self addObstacle];
             
